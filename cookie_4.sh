@@ -19,4 +19,4 @@ fi
 
 NAME=$(echo $string | cut -d= -f2 | cut -d, -f1 | tr [A-Z] [a-z]) #cutting name from format n=bruce,dc=vaiolabs,dc=com
 
-echo $NAME
+echo $NAME # why not to use bash possibility to lower case instead of tr --> echo ${NAME,,}
