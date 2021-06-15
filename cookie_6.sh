@@ -15,7 +15,7 @@
 while true
 do
 
-cat <<- EOM
+cat <<- EOM # very complicated  way to print out the menu: you can use echo, printf or read itself
 1. Reset password
 2. Show disc usage
 3. Ping a host
