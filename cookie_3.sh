@@ -9,6 +9,8 @@
 
 DATE=$(date +%d-%m-%y)
 
+#what if you need to used printf and awk instead, how would you do it ?
+
 echo the day is $(echo $DATE | cut -d- -f1)
 echo the month is $(echo $DATE | cut -d- -f2)
 echo the year is $(echo $DATE | cut -d- -f3)
