@@ -26,5 +26,6 @@ do
     fi  
 
 
-    (( line_num++ ))
-done < names.txt    
+    (( line_num++ )) # what bout `let` command ?
+    
+done < names.txt    # great work !!!
