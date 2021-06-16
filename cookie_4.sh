@@ -2,7 +2,7 @@
 #########################################################################################################
 # created by: purple-thistle
 # purpose of: cut name from a string in format 'n=bruce,dc=vaiolabs,dc=com' and write it to stdout(file of strings in cookie_5.sh)
-# date: 14.06.21
+# date: 16.06.21
 # version: 0.3.1
 #########################################################################################################
 
