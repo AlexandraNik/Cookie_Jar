@@ -3,7 +3,7 @@
 # created by: purple-thistle
 # purpose of: cut name from a string in format 'n=bruce,dc=vaiolabs,dc=com' and write it to stdout(file of strings in cookie_5.sh)
 # date: 14.06.21
-# version: 0.2.1
+# version: 0.3.1
 #########################################################################################################
 
 
@@ -17,6 +17,6 @@ else
     
 fi    
 
-NAME=$(echo $string | cut -d= -f2 | cut -d, -f1 | tr [A-Z] [a-z]) #cutting name from format n=bruce,dc=vaiolabs,dc=com
+NAME=$(echo $string | cut -d= -f2 | cut -d, -f1) #cutting name from format n=bruce,dc=vaiolabs,dc=com
 
-echo $NAME
+echo ${NAME,,}
