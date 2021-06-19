@@ -2,15 +2,14 @@
 #########################################################################################################
 # created by: purple-thistle
 # purpose of: display date in format: The day is 17, The month is 12, The year is 17
-# date: 15.06.21
-# version: 0.2.2
+# date: 16.06.21
+# version: 0.4.3
 #########################################################################################################
 
 
 DATE=$(date +%d-%m-%y)
 
 #what if you need to used printf and awk instead, how would you do it ?
-
-echo the day is $(echo $DATE | cut -d- -f1)
-echo the month is $(echo $DATE | cut -d- -f2)
-echo the year is $(echo $DATE | cut -d- -f3)
+printf "The day is %s\n" $(echo $DATE | awk -F- '{print $1}')
+printf "The month is %s\n" $(echo $DATE | awk -F- '{print $2}')
+printf "The year is %s\n" $(echo $DATE | awk -F- '{print $3}')
