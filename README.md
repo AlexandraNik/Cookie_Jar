@@ -26,4 +26,4 @@ Note: never test the script on live machine, find a way to run the script that s
 From this menu: make following options available: (1)reset password, (2) show disk usage, (3) ping a host, (4)log out. You are welcome to add more options if you have them in mind.
 Bonus cookie: modify the script and related configuration so that the user can be sudo to set passwords for the other users as well.
 
-(Exercise buy @silent-mobius)
+(Exercise by @silent-mobius)
